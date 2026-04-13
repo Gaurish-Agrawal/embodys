@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EMBody Study</title>
+    <style>
+      :root {
+        --design-width: 1728px;
+        --cta-top: 72.179%;
+        --cta-height: 9.201%;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #fff;
+        font-family: Arial, sans-serif;
+      }
+
+      .poster {
+        position: relative;
+        width: min(100vw, var(--design-width));
+        margin: 0 auto;
+      }
+
+      .poster img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .cta-link {
+        position: absolute;
+        top: var(--cta-top);
+        left: 0;
+        right: 0;
+        display: block;
+        height: var(--cta-height);
+        text-indent: -9999px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .cta-link:focus-visible {
+        outline: 4px solid rgba(10, 97, 124, 0.75);
+        outline-offset: -6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="poster">
+      <img
+        src="assets/welcome-to-the-embody-study.png"
+        alt="Welcome to the EMBody Study flyer"
+      >
+      <!-- Replace the placeholder URL with the real eligibility form when ready. -->
+      <a
+        class="cta-link"
+        href="https://example.com/"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="See if you're eligible"
+        title="See if you're eligible"
+      >
+        See if you're eligible
+      </a>
+    </main>
+  </body>
+</html>
